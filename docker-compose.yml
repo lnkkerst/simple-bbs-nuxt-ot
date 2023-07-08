@@ -1,0 +1,8 @@
+version: '3.0'
+services:
+  simple-bbs-nuxt:
+    build: .
+    environment:
+      - PORT=80
+    ports:
+      - 3040:80

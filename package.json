@@ -8,9 +8,59 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "overrides": {
+    "vue": "latest"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.39.7",
+    "@element-plus/nuxt": "^1.0.5",
     "@nuxt/devtools": "latest",
+    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
+    "@types/dompurify": "^3.0.2",
+    "@types/jsdom": "^21.1.1",
+    "@types/marked": "^5.0.0",
     "@types/node": "^18",
-    "nuxt": "^3.5.2"
+    "@types/sanitize-html": "^2.9.0",
+    "@unocss/nuxt": "^0.53.4",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/nuxt": "^10.2.1",
+    "element-plus": "^2.3.7",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "nuxt": "^3.5.2",
+    "nuxt-lodash": "^2.5.0",
+    "prettier": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@antfu",
+      "prettier"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": true,
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "printWidth": 80,
+    "useTabs": false,
+    "quoteProps": "as-needed",
+    "bracketSpacing": true,
+    "rangeStart": 0,
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "ignore"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
+    "@unocss/reset": "^0.53.4",
+    "camelcase-keys": "^8.0.2",
+    "jsdom": "^22.1.0",
+    "marked": "^5.1.1",
+    "mavon-editor": "^3.0.1",
+    "pinia": "^2.1.4",
+    "pinia-plugin-persistedstate": "^3.1.0",
+    "sanitize-html": "^2.11.0",
+    "sass": "^1.63.6",
+    "unocss": "^0.53.4"
   }
 }
